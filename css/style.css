@@ -6282,4 +6282,15 @@ body .certifications-hero > p {
     margin: 0 auto !important;
     text-align: center !important;
 }
-/* Projects section heading alignment */
+.projects-showcase .projects-eyebrow {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 0 15px 0;
+    text-align: center;
+    color: #a7a1ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
