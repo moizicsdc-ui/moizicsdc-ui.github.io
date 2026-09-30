@@ -6296,3 +6296,28 @@ body .certifications-hero > p {
     margin: 0 auto !important;
     text-align: center !important;
 }
+/* Projects section heading alignment */
+.projects-showcase .section-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-showcase .section-heading .eyebrow {
+    display: block;
+    width: auto;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+.projects-showcase .section-heading h2 {
+    text-align: center;
+}
+
+.projects-showcase .section-heading p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
