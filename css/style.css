@@ -3575,3 +3575,47 @@ body {
         font-size: 0.75rem;
     }
 }
+.projects-hero {
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+
+.projects-hero .eyebrow {
+    margin-bottom: 22px;
+}
+
+.projects-hero h1 {
+    max-width: 900px;
+    margin-bottom: 24px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.projects-hero p {
+    max-width: 700px;
+    margin: 0;
+    color: #969dad;
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+
+    .projects-hero {
+        padding-top: 65px;
+        padding-bottom: 55px;
+    }
+
+    .projects-hero .eyebrow {
+        margin-bottom: 18px;
+    }
+
+    .projects-hero h1 {
+        line-height: 1.1;
+    }
+
+    .projects-hero p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+}
