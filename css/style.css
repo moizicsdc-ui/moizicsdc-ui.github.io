@@ -2741,3 +2741,158 @@ body {
     }
 
 }
+/* =========================
+   EXPERIENCE CTA — PREMIUM
+   ========================= */
+
+.experience-page .contact-cta,
+.contact-cta {
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+    padding: 70px 60px;
+    border-radius: 28px;
+    border: 1px solid rgba(139, 146, 255, 0.18);
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(99, 102, 241, 0.16),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(168, 85, 247, 0.12),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.015)
+        );
+    backdrop-filter: blur(18px);
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Soft glowing background */
+.experience-page .contact-cta::before,
+.contact-cta::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: -130px;
+    right: -80px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.14);
+    filter: blur(70px);
+    pointer-events: none;
+}
+
+.experience-page .contact-cta::after,
+.contact-cta::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    bottom: -120px;
+    left: -80px;
+    border-radius: 50%;
+    background: rgba(168, 85, 247, 0.1);
+    filter: blur(70px);
+    pointer-events: none;
+}
+
+/* CTA content */
+.contact-cta > * {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-cta h2 {
+    max-width: 700px;
+    margin: 10px 0 18px;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.contact-cta p {
+    max-width: 650px;
+    margin-bottom: 32px;
+    color: #9da3b2;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Premium CTA button */
+.contact-cta .btn-primary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 180px;
+    padding: 15px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #dfe3ff
+    );
+    color: #0c0d12;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        0 0 30px rgba(139, 146, 255, 0.08);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.contact-cta .btn-primary::after {
+    content: "→";
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-cta .btn-primary:hover {
+    transform: translateY(-4px);
+    background: #ffffff;
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.35),
+        0 0 35px rgba(139, 146, 255, 0.18);
+}
+
+.contact-cta .btn-primary:hover::after {
+    transform: translateX(5px);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .experience-page .contact-cta,
+    .contact-cta {
+        padding: 45px 25px;
+        margin-top: 50px;
+        border-radius: 22px;
+    }
+
+    .contact-cta h2 {
+        font-size: 2rem;
+    }
+
+    .contact-cta p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .contact-cta .btn-primary {
+        width: 100%;
+        min-width: 0;
+    }
+}
