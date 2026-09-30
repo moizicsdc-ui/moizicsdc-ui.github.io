@@ -1963,3 +1963,95 @@ footer p {
     }
 
 }
+/* =========================
+   INNER PAGE WIDTH FIX
+========================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.page-hero,
+.content-section,
+.contact-cta {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.page-hero {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.content-section {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.contact-cta {
+    width: calc(100% - 12%);
+    box-sizing: border-box;
+}
+
+
+/* Prevent oversized headings */
+
+.page-hero h1 {
+    max-width: 900px;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    overflow-wrap: break-word;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+    overflow-wrap: break-word;
+}
+
+
+/* Better desktop spacing */
+
+.about-grid {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.expertise-grid {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .page-hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .content-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-cta {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+}
