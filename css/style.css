@@ -1714,3 +1714,252 @@ footer p {
     transform: translateY(0);
 
 }
+/* =========================
+   INNER PAGE STYLES
+========================= */
+
+.page-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    padding: 150px 8% 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.18), transparent 70%);
+    top: 0;
+    right: 5%;
+    filter: blur(20px);
+}
+
+.page-hero-content {
+    max-width: 850px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero h1 {
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin: 20px 0;
+}
+
+.page-hero h1 span {
+    background: linear-gradient(90deg, #ffffff, #9da7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-hero p {
+    max-width: 700px;
+    color: #a7adbd;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+
+/* CONTENT */
+
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 6%;
+}
+
+.section-heading {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.section-number {
+    font-size: 0.8rem;
+    color: #8b92ff;
+    letter-spacing: 0.15em;
+    padding-top: 8px;
+}
+
+.section-heading h2 {
+    max-width: 700px;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    margin-top: 15px;
+}
+
+
+/* ABOUT GRID */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-text p {
+    color: #a7adbd;
+    font-size: 1.08rem;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.about-highlights {
+    display: grid;
+    gap: 15px;
+}
+
+.highlight-card {
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+}
+
+.highlight-card span {
+    display: block;
+    color: #858da3;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+}
+
+.highlight-card strong {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+
+/* EXPERTISE */
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.expertise-card {
+    padding: 35px;
+    min-height: 250px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.025);
+    border-radius: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(139, 146, 255, 0.4);
+}
+
+.expertise-card .card-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(99,102,241,0.12);
+    color: #9da7ff;
+    font-size: 0.75rem;
+    margin-bottom: 30px;
+}
+
+.expertise-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.expertise-card p {
+    color: #9299aa;
+    line-height: 1.7;
+}
+
+
+/* CONTACT CTA */
+
+.contact-cta {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 70px 6%;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(99,102,241,0.14), transparent 35%),
+        rgba(255,255,255,0.025);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-cta h2 {
+    max-width: 650px;
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1.05;
+    margin-top: 15px;
+}
+
+.contact-cta h2 span {
+    color: #9da7ff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .page-hero {
+        padding: 130px 6% 70px;
+        min-height: 50vh;
+    }
+
+    .page-hero h1 {
+        font-size: 3rem;
+    }
+
+    .content-section {
+        padding: 70px 6%;
+    }
+
+    .section-heading {
+        gap: 15px;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-cta {
+        margin: 50px 6%;
+        padding: 45px 25px;
+    }
+
+}
