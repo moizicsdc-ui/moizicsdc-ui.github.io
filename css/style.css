@@ -6250,3 +6250,41 @@ body.marketing-lab-page .question-card {
     margin: 0 auto;
     text-align: center;
 }
+/* =========================================
+   CERTIFICATIONS HERO — EXACT ALIGNMENT
+   ========================================= */
+
+body .certifications-hero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+body .certifications-hero .eyebrow {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 25px 0 !important;
+    text-align: center !important;
+}
+
+body .certifications-hero h1 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin: 0 auto 30px auto !important;
+    text-align: center !important;
+}
+
+body .certifications-hero h1 span {
+    display: block !important;
+}
+
+body .certifications-hero > p {
+    display: block !important;
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
