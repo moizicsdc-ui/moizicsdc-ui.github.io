@@ -4304,3 +4304,398 @@ body {
         padding: 22px;
     }
 }
+/* =========================================================
+   PREMIUM CERTIFICATIONS PAGE
+   ========================================================= */
+
+.certifications-hero {
+    position: relative;
+    min-height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.certifications-hero::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    top: -220px;
+    right: -120px;
+    background: radial-gradient(
+        circle,
+        rgba(95, 75, 255, 0.18),
+        transparent 68%
+    );
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+.certifications-hero::after {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    bottom: -220px;
+    left: -160px;
+    background: radial-gradient(
+        circle,
+        rgba(0, 190, 255, 0.12),
+        transparent 68%
+    );
+    pointer-events: none;
+}
+
+.certifications-hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 950px;
+    margin-bottom: 24px;
+}
+
+.certifications-hero h1 span {
+    display: block;
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #9ca8ff,
+        #6ddcff
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.certifications-hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+}
+
+
+/* ---------------------------------------------------------
+   CERTIFICATION SECTION
+   --------------------------------------------------------- */
+
+.certifications-section {
+    position: relative;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 55px;
+}
+
+
+/* ---------------------------------------------------------
+   CERTIFICATION CARD
+   --------------------------------------------------------- */
+
+.certification-card {
+    position: relative;
+    min-height: 330px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 24px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.075),
+            rgba(255, 255, 255, 0.025)
+        );
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    overflow: hidden;
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.certification-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: -80px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(105, 85, 255, 0.20),
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+.certification-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.08),
+        transparent 35%
+    );
+    pointer-events: none;
+}
+
+.certification-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(130, 120, 255, 0.35);
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.35),
+        0 0 35px rgba(90, 80, 255, 0.08);
+}
+
+.featured-cert {
+    grid-column: span 2;
+    min-height: 350px;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(95, 75, 255, 0.16),
+            transparent 28%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.09),
+            rgba(255, 255, 255, 0.025)
+        );
+}
+
+
+/* ---------------------------------------------------------
+   CARD TOP
+   --------------------------------------------------------- */
+
+.certification-top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.certification-number {
+    font-family: monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.certification-status {
+    padding: 7px 11px;
+    border: 1px solid rgba(100, 255, 190, 0.18);
+    border-radius: 999px;
+    background: rgba(100, 255, 190, 0.06);
+    color: #9fffcf;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+
+/* ---------------------------------------------------------
+   ICON
+   --------------------------------------------------------- */
+
+.certification-icon {
+    position: relative;
+    z-index: 2;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    border: 1px solid rgba(145, 130, 255, 0.25);
+    border-radius: 18px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(115, 95, 255, 0.20),
+            rgba(50, 190, 255, 0.06)
+        );
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.10),
+        0 10px 30px rgba(60, 50, 180, 0.12);
+    color: #dcd9ff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.certification-category {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-bottom: 10px;
+    color: #9691ff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.certification-card h3 {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 14px;
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+    line-height: 1.2;
+}
+
+.certification-card p {
+    position: relative;
+    z-index: 2;
+    max-width: 620px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.58);
+    line-height: 1.75;
+    font-size: 0.94rem;
+}
+
+
+/* ---------------------------------------------------------
+   CARD FOOTER
+   --------------------------------------------------------- */
+
+.certification-footer {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.certification-footer > span {
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.certification-footer a {
+    color: #c4c0ff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.certification-footer a:hover {
+    color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   LEARNING AREAS
+   --------------------------------------------------------- */
+
+.certification-learning-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 45px;
+}
+
+.certification-learning-grid .highlight-card {
+    position: relative;
+    min-height: 210px;
+    padding: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.035);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.certification-learning-grid .highlight-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(120, 110, 255, 0.28);
+    background: rgba(255, 255, 255, 0.055);
+}
+
+.certification-learning-grid .highlight-card > span {
+    display: block;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.30);
+    font-family: monospace;
+    font-size: 0.72rem;
+}
+
+.certification-learning-grid .highlight-card h3 {
+    margin-bottom: 10px;
+}
+
+.certification-learning-grid .highlight-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.52);
+    line-height: 1.65;
+    font-size: 0.88rem;
+}
+
+
+/* ---------------------------------------------------------
+   CERTIFICATION PAGE CTA
+   --------------------------------------------------------- */
+
+.certifications-section + .content-section {
+    padding-top: 30px;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-cert {
+        grid-column: span 1;
+    }
+
+    .certification-learning-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .certifications-hero {
+        min-height: 55vh;
+    }
+
+    .certification-card,
+    .featured-cert {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .certification-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .certification-learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
