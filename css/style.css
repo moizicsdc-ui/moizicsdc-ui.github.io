@@ -331,14 +331,17 @@ nav a:hover {
 }
 
 .eyebrow {
-    display: block;
-    width: fit-content;
-    margin: 0 0 15px 0;
+
     color: var(--accent-light);
+
     font-size: 11px;
+
     font-weight: 700;
+
     letter-spacing: 2.2px;
-    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
 }
 
 .hero h1 {
@@ -2191,6 +2194,11 @@ body {
     text-align: left !important;
 }
 
+.contact-box .eyebrow {
+    display: block;
+    margin-bottom: 12px;
+}
+
 .contact-box h2 {
     display: block !important;
     width: 100% !important;
@@ -3579,7 +3587,7 @@ body {
 }
 
 .projects-hero .eyebrow {
-   
+    margin-bottom: 22px;
 }
 
 .projects-hero h1 {
@@ -5439,6 +5447,14 @@ body.marketing-lab-page .lab-hero-content {
     max-width: 900px;
     width: 100%;
     min-width: 0;
+}
+
+body.marketing-lab-page .lab-hero-content .eyebrow {
+    margin: 0;
+color: #a7a1ff;
+font-size: 0.72rem;
+letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 body.marketing-lab-page .lab-hero-content h1 {
