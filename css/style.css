@@ -6218,3 +6218,35 @@ body.marketing-lab-page .question-card {
         padding: 25px;
     }
 }
+/* =========================================
+   PAGE HERO — CENTER ALIGNMENT
+   ========================================= */
+
+.page-hero {
+    text-align: center;
+}
+
+.page-hero .eyebrow {
+    display: block;
+    width: 100%;
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.page-hero h1 span {
+    display: block;
+}
+
+.page-hero > p {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
