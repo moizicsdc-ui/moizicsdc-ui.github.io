@@ -6513,3 +6513,14 @@ body .certifications-hero > p {
     margin-right: auto !important;
 }
 
+.projects-section-heading {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+.projects-section-heading .projects-eyebrow,
+.projects-section-heading h2,
+.projects-section-heading p {
+    text-align: center !important;
+}
