@@ -6294,3 +6294,30 @@ body .certifications-hero > p {
     letter-spacing: 2.2px;
     text-transform: uppercase;
 }
+/* =========================================
+   RESTORE VERTICAL SECTION HIERARCHY
+   ========================================= */
+
+.section-heading {
+    display: block;
+    max-width: 750px;
+    margin-bottom: 55px;
+}
+
+.section-heading .eyebrow {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    margin-top: 0;
+    max-width: 750px;
+}
+
+.section-heading > p {
+    margin-top: 22px;
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
