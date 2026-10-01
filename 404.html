@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        const path = window.location.pathname;
+
+        const pages = {
+            "/about": "/about.html",
+            "/experience": "/experience.html",
+            "/projects": "/projects.html",
+            "/certifications": "/certifications.html"
+        };
+
+        if (pages[path]) {
+            window.location.replace(pages[path]);
+        } else {
+            window.location.replace("/");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
