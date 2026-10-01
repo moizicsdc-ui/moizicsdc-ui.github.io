@@ -6380,17 +6380,19 @@ body .certifications-hero > p {
 
 .home-contact-cta {
     display: block !important;
+    width: calc(100% - 12%) !important;
+    max-width: 1200px !important;
+    margin: 80px auto !important;
+    padding: 70px 6% !important;
+    box-sizing: border-box !important;
     text-align: center !important;
-    padding: 150px 0 !important;
-    margin: 0 !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(99,79,255,0.14),
-            transparent 45%
-        ) !important;
+}
+
+.home-contact-cta .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
 }
 
 .home-contact-cta .eyebrow {
@@ -6400,14 +6402,9 @@ body .certifications-hero > p {
 }
 
 .home-contact-cta h2 {
-    max-width: 750px !important;
-    margin: 0 auto 35px !important;
-    text-align: center !important;
-}
-
-.home-contact-cta p {
-    max-width: 650px !important;
-    margin: 0 auto 32px !important;
+    display: block !important;
+    max-width: 700px !important;
+    margin: 10px auto 25px !important;
     text-align: center !important;
 }
 
