@@ -6374,4 +6374,94 @@ body .certifications-hero > p {
     max-width: 650px !important;
     margin: 0 !important;
 }
-/* =========================
+   /* =========================================================
+   UNIVERSAL CTA LAYOUT
+   Eyebrow
+   Heading
+   Description              CTA Button
+   ========================================================= */
+
+.contact-cta {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: center !important;
+    gap: 60px !important;
+}
+
+/* Left content */
+.contact-cta .cta-content {
+    min-width: 0;
+    max-width: 760px;
+}
+
+.contact-cta .cta-content .eyebrow {
+    display: block;
+    margin: 0 0 18px;
+}
+
+.contact-cta .cta-content h2 {
+    max-width: 720px;
+    margin: 0 0 22px;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+}
+
+.contact-cta .cta-content p {
+    max-width: 650px;
+    margin: 0;
+    color: #9da3b2;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Right CTA button */
+.contact-cta > .btn-primary,
+.contact-cta > .primary-btn {
+    justify-self: end;
+    align-self: center;
+    white-space: nowrap;
+}
+
+/* Home CTA uses an inner container */
+.contact-cta.home-contact-cta {
+    display: block !important;
+}
+
+.contact-cta.home-contact-cta .cta-content {
+    max-width: 760px;
+}
+
+.contact-cta.home-contact-cta > .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .contact-cta {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .contact-cta > .btn-primary,
+    .contact-cta > .primary-btn {
+        justify-self: start;
+    }
+
+    .contact-cta.home-contact-cta > .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-cta .cta-content h2 {
+        font-size: 2rem;
+    }
+
+}
