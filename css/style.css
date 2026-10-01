@@ -6512,3 +6512,15 @@ body .certifications-hero > p {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+.projects-section-heading {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.projects-section-heading .projects-eyebrow,
+.projects-section-heading h2,
+.projects-section-heading p {
+    text-align: center !important;
+}
